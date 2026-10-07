@@ -1,0 +1,12 @@
+## Benchmark Performance: Virtual Machine vs. Docker Container
+
+| Environment | Threads | Connections | Requests per Second (RPS) | Avg Latency (ms) |
+| :--- | :--- | :--- | :--- | :--- |
+| **VM** | 1 | 10 | 333.24 | 30.27 |
+| **VM** | 2 | 50 | 382.25 | 130.36 |
+| **VM** | 4 | 100 | 277.13 | 358.79 |
+| **VM** | 4 | 200 | 284.20 | 698.60 |
+| **Docker** | 1 | 10 | 272.73 | 37.07 |
+| **Docker** | 2 | 50 | 308.24 | 161.52 |
+| **Docker** | 4 | 100 | 296.36 | 335.09 |
+| **Docker** | 4 | 200 | 276.14 | 714.09 |
