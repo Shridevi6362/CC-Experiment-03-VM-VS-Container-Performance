@@ -1,0 +1,18 @@
+| Category | Metric | VM Value | Container Value | Relative Difference |
+| :--- | :--- | :--- | :--- | :--- |
+| **CPU (1-thread)** | Events/sec | 515.84 | 517.19 | +0.26% (Container faster) |
+| **CPU (2-thread)** | Events/sec | 883.55 | 894.38 | +1.23% (Container faster) |
+| **CPU (4-thread)** | Events/sec | 928.17 | 900.45 | +3.08% (VM faster) |
+| **CPU (8-thread)** | Events/sec | 905.17 | 914.42 | +1.02% (Container faster) |
+| **Memory (1-thread)** | MiB/sec | 9,541.97 | 5,152.43 | +85.19% (VM faster) |
+| **Memory (2-thread)** | MiB/sec | 9,880.38 | 6,970.16 | +41.75% (VM faster) |
+| **Storage Seq Read** | MiB/s | 461.0 | 500.0 | +8.46% (Container faster) |
+| **Storage Seq Write** | MiB/s | 358.0 | 291.0 | +23.02% (VM faster) |
+| **Storage Rand Read** | IOPS | 1,313.0 | 1,767.0 | +34.58% (Container faster) |
+| **Storage Rand Write** | IOPS | 1,331.0 | 1,346.0 | +1.13% (Container faster) |
+| **Network Throughput (Sender)** | Gbits/sec | 14.1 | 13.7 | +2.92% (VM faster) |
+| **Network Throughput (Receiver)** | Gbits/sec | 14.1 | 10.3 | +36.89% (VM faster) |
+| **Network Retransmissions** | Packets | 3.0 | 13.0 | Container had 4.33x more retransmits |
+| **FastAPI /health** | Req/sec | 419.79 | 371.07 | +13.13% (VM faster) |
+| **FastAPI /compute** | Req/sec | 12.24 | 10.76 | +13.75% (VM faster) |
+| **FastAPI /memory** | Req/sec | 16.43 | 14.40 | +14.10% (VM faster) |
